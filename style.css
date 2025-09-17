@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Comfortaa", sans-serif;
+    
+}
+:root{
+  --div-color : transparent;
+
+  
+}
+body{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    background-image:linear-gradient(rgba(48, 47, 47, 0.5)), url(https://cdn.pixabay.com/photo/2021/11/05/19/01/cappadocia-6771879_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    font-size: 1.7rem;
+    color: white;
+
+     background-color: var(--div-color);
+     padding: 10px 10px;
+}
+
+
+.hero {
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+    
+    width: 90%;
+    height: 15rem;
+    margin: 20px auto;
+    border-radius:12px;
+    padding: 10px 10px;
+   
+    color: white;
+    font-weight: 1000;
+    font-size: large;
+    font-family: "Comfortaa", sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+#contentName{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.content{
+    width: 90%;
+    margin: 20px auto;
+    border-radius:12px;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.content .place{
+    background-color: var(--div-color);
+    width: 24%;
+    height: 25rem;
+    border: 2px solid rgba(73, 72, 72,0.5);
+    border-radius: 10px;
+
+    font-size: small;
+    color: white;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition: all 0.5s;
+}
+.content .place img{
+    width: 100%;
+    border-radius: 5px;
+    
+}
+.content .place .btns{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.place:hover{
+    transform: translateY(-10px);
+    transition: all 0.5s;
+}
+#bookNow{
+    border: 1px solid gray;
+
+    font-weight: 1000;
+
+}
+#bookNow:hover{
+    background-color: rgba(94, 94, 94, 0.84);
+}
+#learn{
+    background-color: rgba(94, 94, 94, 0.84);
+    font-weight: 600;
+}
+#learn:hover{
+    background-color: white;
+    border: 1px solid gray;
+}
+button , a{
+    width: 8rem;
+    height: 2rem;
+    border-radius: 10px;
+    outline: none;
+    border: none;  
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+button:hover{
+    cursor: pointer;
+}
+
+footer{
+    background-color: rgba(103, 102, 102, 0.331);
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    padding: 10px 10px;
+}
+@media (max-width: 768px) {
+  .content .place {
+    width: 100%;
+    height: 100%;
+  }
+}
